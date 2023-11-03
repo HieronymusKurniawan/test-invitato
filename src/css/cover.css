@@ -1,0 +1,434 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+@keyframes textPopUp {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#teks-overlay-1,
+#teks-overlay-2,
+#teks-overlay-3,
+#teks-overlay-4,
+#teks-overlay-5,
+#pigeon {
+  animation: textPopUp 1s ease-out; 
+  animation-fill-mode: both; 
+  animation-delay: 0.5s; 
+}
+@font-face {
+  font-family: "Jost";
+  src: url("../fonts/Jost.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "ClickerScript";
+  src: url("../fonts/ClickerScript.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.cover {
+  background-image: url("../images/wedding-1.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.image-30 {
+  object-fit: cover;
+  width: 35%;
+  height: 100%;
+}
+
+.image-70 {
+  object-fit: cover;
+  height: 100%;
+  width: 65%;
+  margin-right: 0.5%;
+}
+
+#teks-overlay-1 {
+  position: absolute;
+  top: 10%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 100;
+  letter-spacing: 3px;
+  color: #8f8784;
+  z-index: 1;
+}
+
+#teks-overlay-2 {
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  font-size: 54px;
+  font-family: "ClickerScript", "cursive";
+  font-weight: bold;
+  color: #67544e;
+  letter-spacing: 3px;
+  z-index: 1;
+  margin-top: 30px;
+}
+
+#teks-overlay-3 {
+  position: absolute;
+  top: 20%;
+  left: 4%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-family: "Jost", "sans-serif";
+  font-style: italic;
+  font-weight: 100;
+  color: #8f8784;
+  z-index: 1;
+  margin-top: 80px;
+  letter-spacing: 1px;
+}
+
+#teks-overlay-4 {
+  position: absolute;
+  top: 25%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-size: 14px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 100;
+  color: white;
+  z-index: 1;
+}
+#teks-overlay-5 {
+  position: absolute;
+  top: 26%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  font-family: "ClickerScript", "cursive";
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+  margin-top: 30px;
+}
+#teks-overlay-6 {
+  position: absolute;
+  top: 88%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  font-size: 15px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 100;
+  color: white;
+  z-index: 2;
+  margin-top: 30px;
+}
+#teks-overlay-7 {
+  position: absolute;
+  top: 92%;
+  left: 84%;
+  transform: translate(-50%, -50%);
+  font-size: 12px;
+  font-family: "Jost", "sans-serif";
+  font-weight: 100;
+  color: white;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+#pigeon {
+  position: absolute;
+  top: 15%;
+  left: 82%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1); 
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.button {
+  position: absolute;
+  top: 70%;
+  left: 80%;
+  transform: translate(-50%, -50%);
+  font-family: "Jost", "sans-serif";
+  background-color: #a5aeb6;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  opacity: 0.9;
+  z-index: 2;
+  font-weight: bold;
+  animation: zoomInOut 1.5s infinite alternate; 
+}
+
+.button:hover {
+  background-color: black;
+  opacity: 0.5;
+}
+
+
+.footer-overlay {
+  position: absolute;
+  top: 64%;
+  left: 65.3%;
+  z-index: 1;
+}
+
+@media (max-width: 1024px) {
+  .image-30 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #teks-overlay-1,
+  #teks-overlay-2,
+  #teks-overlay-3 {
+    display: none;
+  }
+
+  #teks-overlay-4 {
+    position: absolute;
+    top: 22%;
+    left: 38%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    color: white;
+    z-index: 1;
+  }
+  #teks-overlay-5 {
+    position: absolute;
+    top: 23%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    font-size: 42px;
+    font-family: "ClickerScript", "cursive";
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  }
+
+  #pigeon {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  .image-70 {
+    display: none;
+  }
+  .image-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    font-family: "Jost", "sans-serif";
+    background-color: #a5aeb6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 2;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .footer-overlay {
+    position: absolute;
+    top: 57%;
+    left: 0%;
+    z-index: 1;
+  }
+
+  #teks-overlay-6 {
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-family: "Jost", "sans-serif";
+    font-weight: 100;
+    color: white;
+    z-index: 2;
+    margin-top: 30px;
+  }
+  #teks-overlay-7 {
+    position: absolute;
+    top: 92%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 12px;
+    font-family: "Jost", "sans-serif";
+    font-weight: 100;
+    color: white;
+    z-index: 2;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-30 {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #teks-overlay-1,
+  #teks-overlay-2,
+  #teks-overlay-3 {
+    display: none;
+  }
+
+  #teks-overlay-4 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: "Jost", sans-serif;
+    font-weight: 100;
+    color: white;
+    z-index: 1;
+  }
+  #teks-overlay-5 {
+    position: absolute;
+    top: 21%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    font-family: "ClickerScript", "cursive";
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+    margin-top: 30px;
+  }
+
+  #pigeon {
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+  }
+  .image-70 {
+    display: none;
+  }
+  .image-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Jost", "sans-serif";
+    background-color: #a5aeb6;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    opacity: 0.8;
+    z-index: 2;
+    font-weight: bold;
+  }
+  
+  .button:hover {
+    background-color: black;
+    opacity: 0.5;
+  }
+
+  .footer-overlay {
+    position: absolute;
+    top: 68%;
+    left: 0%;
+    z-index: 1;
+  }
+
+  #teks-overlay-6 {
+    position: absolute;
+    top: 89%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 14px;
+    font-family: "Jost", "sans-serif";
+    font-weight: 100;
+    color: white;
+    z-index: 2;
+    margin-top: 30px;
+  }
+  #teks-overlay-7 {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 11px;
+    font-family: "Jost", "sans-serif";
+    font-weight: 100;
+    color: white;
+    z-index: 2;
+    margin-top: 30px;
+  }
+}
