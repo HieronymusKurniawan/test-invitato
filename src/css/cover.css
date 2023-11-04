@@ -20,9 +20,9 @@ html {
 #teks-overlay-4,
 #teks-overlay-5,
 #pigeon {
-  animation: textPopUp 1s ease-out; 
-  animation-fill-mode: both; 
-  animation-delay: 0.5s; 
+  animation: textPopUp 1s ease-out;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 @font-face {
   font-family: "Jost";
@@ -52,24 +52,28 @@ html {
 
 .image-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  height: 100vh;
   position: absolute;
   top: 0;
   left: 0;
 }
+
 .image-30 {
-  object-fit: cover;
-  width: 35%;
-  height: 100%;
+  overflow: auto;
+  height: 100vh;
+  width: 55%;
+  position: relative;
+  left: 90%;
+  z-index: 1;
 }
 
 .image-70 {
   object-fit: cover;
-  height: 100%;
-  width: 65%;
+  width: 63%;
+  position: fixed;
   margin-right: 0.5%;
+  z-index: 1;
 }
 
 #teks-overlay-1 {
@@ -117,7 +121,7 @@ html {
 #teks-overlay-4 {
   position: absolute;
   top: 25%;
-  left: 80%;
+  left: 40%;
   transform: translate(-50%, -50%);
   font-size: 14px;
   font-family: "Jost", "sans-serif";
@@ -128,7 +132,7 @@ html {
 #teks-overlay-5 {
   position: absolute;
   top: 26%;
-  left: 78%;
+  left: 34%;
   transform: translate(-50%, -50%);
   font-size: 36px;
   font-family: "ClickerScript", "cursive";
@@ -140,7 +144,7 @@ html {
 #teks-overlay-6 {
   position: absolute;
   top: 88%;
-  left: 84%;
+  left: 55%;
   transform: translate(-50%, -50%);
   font-size: 15px;
   font-family: "Jost", "sans-serif";
@@ -152,7 +156,7 @@ html {
 #teks-overlay-7 {
   position: absolute;
   top: 92%;
-  left: 84%;
+  left: 55%;
   transform: translate(-50%, -50%);
   font-size: 12px;
   font-family: "Jost", "sans-serif";
@@ -165,7 +169,7 @@ html {
 #pigeon {
   position: absolute;
   top: 15%;
-  left: 82%;
+  left: 47%;
   z-index: 1;
   transform: translate(-50%, -50%);
 }
@@ -175,7 +179,7 @@ html {
     transform: scale(1);
   }
   50% {
-    transform: scale(1.1); 
+    transform: scale(1.1);
   }
   100% {
     transform: scale(1);
@@ -185,19 +189,19 @@ html {
 .button {
   position: absolute;
   top: 70%;
-  left: 80%;
+  left: 40%;
   transform: translate(-50%, -50%);
   font-family: "Jost", "sans-serif";
   background-color: #a5aeb6;
   color: white;
-  padding: 10px 15px;
+  padding: 8px 17px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
   opacity: 0.9;
   z-index: 2;
-  font-weight: bold;
-  animation: zoomInOut 1.5s infinite alternate; 
+  font-weight: 600;
+  animation: zoomInOut 1.5s infinite alternate;
 }
 
 .button:hover {
@@ -205,18 +209,20 @@ html {
   opacity: 0.5;
 }
 
-
 .footer-overlay {
   position: absolute;
-  top: 64%;
-  left: 65.3%;
   z-index: 1;
+  bottom: 0;
 }
 
 @media (max-width: 1024px) {
+  .cover {
+    background: none;
+  }
   .image-30 {
     width: 100%;
     height: 100%;
+    left: 0;
     justify-content: center;
     align-items: center;
   }
@@ -276,15 +282,15 @@ html {
     font-family: "Jost", "sans-serif";
     background-color: #a5aeb6;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 17px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     opacity: 0.8;
     z-index: 2;
-    font-weight: bold;
+    font-weight: 600;
   }
-  
+
   .button:hover {
     background-color: black;
     opacity: 0.5;
@@ -292,9 +298,9 @@ html {
 
   .footer-overlay {
     position: absolute;
-    top: 57%;
-    left: 0%;
+    top: 75%;
     z-index: 1;
+    bottom: 0;
   }
 
   #teks-overlay-6 {
@@ -324,11 +330,15 @@ html {
 }
 
 @media screen and (max-width: 480px) {
-  .image-30 {
+  .image-mobile {
+    overflow: auto;
+    height: 100vh;
     width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .cover {
+    background: none;
   }
 
   #teks-overlay-1,
@@ -340,7 +350,7 @@ html {
   #teks-overlay-4 {
     position: absolute;
     top: 20%;
-    left: 50%;
+    left: 36%;
     transform: translate(-50%, -50%);
     font-size: 14px;
     font-family: "Jost", sans-serif;
@@ -350,8 +360,8 @@ html {
   }
   #teks-overlay-5 {
     position: absolute;
-    top: 21%;
-    left: 50%;
+    top: 20%;
+    left: 27%;
     transform: translate(-50%, -50%);
     font-size: 40px;
     font-family: "ClickerScript", "cursive";
@@ -363,8 +373,8 @@ html {
 
   #pigeon {
     position: absolute;
-    top: 12%;
-    left: 50%;
+    top: 10%;
+    left: 44%;
     z-index: 1;
     transform: translate(-50%, -50%);
   }
@@ -372,6 +382,12 @@ html {
     display: none;
   }
   .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -380,36 +396,35 @@ html {
 
   .button {
     position: absolute;
-    top: 75%;
-    left: 50%;
+    top: 70%;
+    left: 32%;
     transform: translate(-50%, -50%);
     font-family: "Jost", "sans-serif";
     background-color: #a5aeb6;
     color: white;
-    padding: 10px 15px;
+    padding: 8px 17px;
     border: none;
     border-radius: 20px;
     cursor: pointer;
     opacity: 0.8;
     z-index: 2;
-    font-weight: bold;
+    font-weight: 600;
   }
-  
+
   .button:hover {
     background-color: black;
     opacity: 0.5;
   }
 
   .footer-overlay {
+    display: none;
     position: absolute;
-    top: 68%;
-    left: 0%;
     z-index: 1;
   }
 
   #teks-overlay-6 {
     position: absolute;
-    top: 89%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 14px;
@@ -421,7 +436,7 @@ html {
   }
   #teks-overlay-7 {
     position: absolute;
-    top: 93%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 11px;
