@@ -209,11 +209,6 @@ html {
   opacity: 0.5;
 }
 
-.footer-overlay {
-  position: absolute;
-  z-index: 1;
-  bottom: 0;
-}
 
 @media (max-width: 1024px) {
   .cover {
@@ -296,12 +291,6 @@ html {
     opacity: 0.5;
   }
 
-  .footer-overlay {
-    position: absolute;
-    top: 75%;
-    z-index: 1;
-    bottom: 0;
-  }
 
   #teks-overlay-6 {
     position: absolute;
@@ -414,12 +403,6 @@ html {
   .button:hover {
     background-color: black;
     opacity: 0.5;
-  }
-
-  .footer-overlay {
-    display: none;
-    position: absolute;
-    z-index: 1;
   }
 
   #teks-overlay-6 {

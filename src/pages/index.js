@@ -40,20 +40,6 @@ const CoverPage = () => (
         <Link to="/welcoming">
           <button className="button">✉️ Open Invitation</button>
         </Link>
-        <div className="footer-overlay">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="100%"
-            height="200"
-            viewBox="0 0 1280 400"
-          >
-            <path
-              fill="#b4c5d5"
-              fill-opacity="1"
-              d="M0,160L60,133.3C120,107,240,53,360,42.7C480,32,600,64,720,90.7C840,117,960,139,1080,133.3C1200,128,1320,96,1380,80L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"
-            ></path>
-          </svg>
-        </div>
         <div id="teks-overlay-6">Created with 🤍 by Hieronymus</div>
         <div id="teks-overlay-7">© 2023 Nailal & Via. All Rights Reserved</div>
       </div>
