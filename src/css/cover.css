@@ -66,10 +66,13 @@ html {
   position: relative;
   left: 90%;
   z-index: 1;
+  bottom: 0%;
 }
 
 .image-70 {
   object-fit: cover;
+  bottom: 0%;
+  height: 100%;
   width: 63%;
   position: fixed;
   margin-right: 0.5%;

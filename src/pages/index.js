@@ -1,7 +1,5 @@
 import * as React from "react";
 import { Link } from "gatsby";
-import { css } from "@emotion/react";
-import styled from "@emotion/styled";
 import "../css/cover.css";
 import { StaticImage } from "gatsby-plugin-image";
 
@@ -43,7 +41,6 @@ const CoverPage = () => (
         <div id="teks-overlay-6">Created with 🤍 by Hieronymus</div>
         <div id="teks-overlay-7">© 2023 Nailal & Via. All Rights Reserved</div>
       </div>
-      
     </div>
   </div>
 );
