@@ -69,6 +69,16 @@ html {
   bottom: 0%;
 }
 
+.image-welcoming {
+  overflow: auto;
+  height: 100vh;
+  width: 45%;
+  position: relative;
+  left: 77%;
+  z-index: 1;
+  bottom: 0%;
+}
+
 .image-70 {
   object-fit: cover;
   bottom: 0%;
@@ -78,7 +88,9 @@ html {
   margin-right: 0.5%;
   z-index: 1;
 }
-
+.music{
+  display: none;
+}
 #teks-overlay-1 {
   position: absolute;
   top: 10%;
@@ -224,7 +236,9 @@ html {
     justify-content: center;
     align-items: center;
   }
-
+  .music{
+    display: none;
+  }
   #teks-overlay-1,
   #teks-overlay-2,
   #teks-overlay-3 {
@@ -332,7 +346,9 @@ html {
   .cover {
     background: none;
   }
-
+  .music{
+    display: none;
+  }
   #teks-overlay-1,
   #teks-overlay-2,
   #teks-overlay-3 {

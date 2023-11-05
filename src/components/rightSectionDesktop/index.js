@@ -7,7 +7,7 @@ const RightSectionDesktop = () => {
   return (
     <div className="image-30">
       <StaticImage
-        src="../images/wedding-1.jpeg"
+        src="../../images/wedding-1.jpeg"
         alt="Gambar 30%"
         className="image-mobile"
       />

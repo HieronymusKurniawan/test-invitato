@@ -25,5 +25,21 @@ module.exports = {
       "path": "./src/pages/"
     },
     __key: "pages"
+  },{
+    resolve: 'gatsby-source-filesystem',
+    options: {
+      "name": "music",
+      "path": "./src/music/"
+    },
+    __key: "music"
+  },{
+    resolve: 'gatsby-remark-audio',
+        options: {
+          preload: 'auto',
+          loop: true,
+          controls: true,
+          muted: false,
+          autoplay: true
+        }
   }]
 };

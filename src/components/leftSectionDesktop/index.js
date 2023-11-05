@@ -6,7 +6,7 @@ const LeftSectionDesktop = () => {
   return (
     <div>
       <StaticImage
-        src="../../assets/images/wedding-1.jpeg"
+        src="../../images/wedding-1.jpeg"
         alt="Gambar 70%"
         className="image-70"
       />
